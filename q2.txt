@@ -1,0 +1,42 @@
+question 2
+
+class Student:
+    def __init__(self,n,r):
+        self.name = n
+        self.rno = r
+
+    def display(self):
+        print('Name: {}, RollNo: {}'.format(self.name, self.rno))
+
+    def setAge(self,a):
+        self.age = a
+        print('Age : ', self.age)
+
+    def setMarks(self, m):
+        self.marks = m
+        print('Marks : ', self.marks)
+
+x=input("Enter name : ")
+y=int(input("Enter rollno : "))
+s1=Student(x,y)
+s1.display()
+a=int(input("Enter age : "))
+s1.display()
+s1.setAge(a)
+b=int(input("Enter marks : "))
+s1.display()
+s1.setAge(a)
+s1.setMarks(b)
+
+output
+
+Enter name : Harshit
+Enter rollno : 20
+Name: Harshit, RollNo: 20
+Enter age : 20
+Name: Harshit, RollNo: 20
+Age :  20
+Enter marks : 90
+Name: Harshit, RollNo: 20
+Age :  20
+Marks :  90

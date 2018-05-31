@@ -1,0 +1,42 @@
+question 4
+
+class MovieDetails:
+    def __init__(self,m,a,y,r):
+        self.moviename = m
+        self.artistname = a
+        self.yearofrelease = y
+        self.ratings = r
+
+    def display(self):
+        print('Movie name : {}, Artist Name : {}, Year of Release : {}, 
+Ratings : {}'.\
+              format(self.moviename, 
+self.artistname,self.yearofrelease,self.ratings))
+
+    def add(self,m,a,y,r):
+        self.moviename = m
+        self.artistname = a
+        self.yearofrelease = y
+        self.ratings = r
+
+m1=MovieDetails('Avengers:Infinity War','Robert Downey 
+Jr.','2018','8.6')
+m1.display()
+p=input("Enter movie name : ")
+q=input("Enter artist name : ")
+r=int(input("Enter year of release : "))
+s=float(input("Enter ratings : "))
+m2=MovieDetails(p,q,r,s)
+m2.display()
+
+output
+
+Movie name : Avengers:Infinity War, Artist Name : Robert Downey Jr., 
+Year of Release : 2018, Ratings : 8.6
+Enter movie name : Arrow
+Enter artist name : Stephen Amell
+Enter year of release : 2013
+Enter ratings : 8.2
+Movie name : Arrow, Artist Name : Stephen Amell, Year of Release : 2013, 
+Ratings : 8.2
+

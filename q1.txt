@@ -1,0 +1,22 @@
+question 1
+
+class Circle:
+    def __init__(self,r):
+        self.radius=r
+
+    def getArea(self):
+        return 3.14*self.radius*self.radius
+
+    def getCircumference(self):
+        return 2*3.14*self.radius
+
+c=Circle(9)
+x=c.getArea()
+y=c.getCircumference()
+print("Area : ",x)
+print("Circumference : ",y)
+
+output
+
+Area :  254.34
+Circumference :  56.52
